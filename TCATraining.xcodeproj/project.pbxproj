@@ -11,6 +11,8 @@
 		B65A67BA2A85C3D800F2704E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67B92A85C3D800F2704E /* ContentView.swift */; };
 		B65A67BC2A85C3DD00F2704E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65A67BB2A85C3DD00F2704E /* Assets.xcassets */; };
 		B65A67C02A85C3DD00F2704E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65A67BF2A85C3DD00F2704E /* Preview Assets.xcassets */; };
+		B65A67C82A85C4AE00F2704E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B65A67C72A85C4AE00F2704E /* ComposableArchitecture */; };
+		B65A67CB2A85C55800F2704E /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67CA2A85C55800F2704E /* CounterFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		B65A67BB2A85C3DD00F2704E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B65A67BD2A85C3DD00F2704E /* TCATraining.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCATraining.entitlements; sourceTree = "<group>"; };
 		B65A67BF2A85C3DD00F2704E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B65A67CA2A85C55800F2704E /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		B65A67CC2A85D8D900F2704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65A67C82A85C4AE00F2704E /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +57,11 @@
 		B65A67B62A85C3D800F2704E /* TCATraining */ = {
 			isa = PBXGroup;
 			children = (
+				B65A67C92A85C52500F2704E /* Tutorials */,
 				B65A67B72A85C3D800F2704E /* TCATrainingApp.swift */,
 				B65A67B92A85C3D800F2704E /* ContentView.swift */,
 				B65A67BB2A85C3DD00F2704E /* Assets.xcassets */,
+				B65A67CC2A85D8D900F2704E /* Info.plist */,
 				B65A67BD2A85C3DD00F2704E /* TCATraining.entitlements */,
 				B65A67BE2A85C3DD00F2704E /* Preview Content */,
 			);
@@ -67,6 +74,14 @@
 				B65A67BF2A85C3DD00F2704E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B65A67C92A85C52500F2704E /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				B65A67CA2A85C55800F2704E /* CounterFeature.swift */,
+			);
+			path = Tutorials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +100,9 @@
 			dependencies = (
 			);
 			name = TCATraining;
+			packageProductDependencies = (
+				B65A67C72A85C4AE00F2704E /* ComposableArchitecture */,
+			);
 			productName = TCATraining;
 			productReference = B65A67B42A85C3D800F2704E /* TCATraining.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +131,9 @@
 				Base,
 			);
 			mainGroup = B65A67AB2A85C3D800F2704E;
+			packageReferences = (
+				B65A67C62A85C4AD00F2704E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = B65A67B52A85C3D800F2704E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65A67CB2A85C55800F2704E /* CounterFeature.swift in Sources */,
 				B65A67BA2A85C3D800F2704E /* ContentView.swift in Sources */,
 				B65A67B82A85C3D800F2704E /* TCATrainingApp.swift in Sources */,
 			);
@@ -269,6 +291,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCATraining/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +331,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCATraining/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -354,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B65A67C62A85C4AD00F2704E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B65A67C72A85C4AE00F2704E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B65A67C62A85C4AD00F2704E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B65A67AC2A85C3D800F2704E /* Project object */;
 }
