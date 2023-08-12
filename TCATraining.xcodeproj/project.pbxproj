@@ -15,6 +15,7 @@
 		B65A67CB2A85C55800F2704E /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67CA2A85C55800F2704E /* CounterFeature.swift */; };
 		B65A67D42A871BC800F2704E /* TCATrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67D32A871BC800F2704E /* TCATrainingTests.swift */; };
 		B65A67DF2A871FDC00F2704E /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67DA2A871C1800F2704E /* CounterFeatureTests.swift */; };
+		B65A67E12A8736F900F2704E /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67E02A8736F900F2704E /* NumberFactClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		B65A67D12A871BC800F2704E /* TCATrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCATrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65A67D32A871BC800F2704E /* TCATrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCATrainingTests.swift; sourceTree = "<group>"; };
 		B65A67DA2A871C1800F2704E /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
+		B65A67E02A8736F900F2704E /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				B65A67CA2A85C55800F2704E /* CounterFeature.swift */,
+				B65A67E02A8736F900F2704E /* NumberFactClient.swift */,
 			);
 			path = Tutorials;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				B65A67CB2A85C55800F2704E /* CounterFeature.swift in Sources */,
 				B65A67BA2A85C3D800F2704E /* ContentView.swift in Sources */,
 				B65A67B82A85C3D800F2704E /* TCATrainingApp.swift in Sources */,
+				B65A67E12A8736F900F2704E /* NumberFactClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
