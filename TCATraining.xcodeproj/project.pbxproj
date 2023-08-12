@@ -13,7 +13,19 @@
 		B65A67C02A85C3DD00F2704E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65A67BF2A85C3DD00F2704E /* Preview Assets.xcassets */; };
 		B65A67C82A85C4AE00F2704E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B65A67C72A85C4AE00F2704E /* ComposableArchitecture */; };
 		B65A67CB2A85C55800F2704E /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67CA2A85C55800F2704E /* CounterFeature.swift */; };
+		B65A67D42A871BC800F2704E /* TCATrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67D32A871BC800F2704E /* TCATrainingTests.swift */; };
+		B65A67DF2A871FDC00F2704E /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67DA2A871C1800F2704E /* CounterFeatureTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B65A67D52A871BC800F2704E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B65A67AC2A85C3D800F2704E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B65A67B32A85C3D800F2704E;
+			remoteInfo = TCATraining;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B65A67B42A85C3D800F2704E /* TCATraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCATraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +36,9 @@
 		B65A67BF2A85C3DD00F2704E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B65A67CA2A85C55800F2704E /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		B65A67CC2A85D8D900F2704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B65A67D12A871BC800F2704E /* TCATrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCATrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65A67D32A871BC800F2704E /* TCATrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCATrainingTests.swift; sourceTree = "<group>"; };
+		B65A67DA2A871C1800F2704E /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +50,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B65A67CE2A871BC800F2704E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				B65A67B62A85C3D800F2704E /* TCATraining */,
+				B65A67D22A871BC800F2704E /* TCATrainingTests */,
 				B65A67B52A85C3D800F2704E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				B65A67B42A85C3D800F2704E /* TCATraining.app */,
+				B65A67D12A871BC800F2704E /* TCATrainingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +108,15 @@
 			path = Tutorials;
 			sourceTree = "<group>";
 		};
+		B65A67D22A871BC800F2704E /* TCATrainingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B65A67D32A871BC800F2704E /* TCATrainingTests.swift */,
+				B65A67DA2A871C1800F2704E /* CounterFeatureTests.swift */,
+			);
+			path = TCATrainingTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +140,24 @@
 			productReference = B65A67B42A85C3D800F2704E /* TCATraining.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B65A67D02A871BC800F2704E /* TCATrainingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B65A67D72A871BC800F2704E /* Build configuration list for PBXNativeTarget "TCATrainingTests" */;
+			buildPhases = (
+				B65A67CD2A871BC800F2704E /* Sources */,
+				B65A67CE2A871BC800F2704E /* Frameworks */,
+				B65A67CF2A871BC800F2704E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B65A67D62A871BC800F2704E /* PBXTargetDependency */,
+			);
+			name = TCATrainingTests;
+			productName = TCATrainingTests;
+			productReference = B65A67D12A871BC800F2704E /* TCATrainingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -119,6 +170,10 @@
 				TargetAttributes = {
 					B65A67B32A85C3D800F2704E = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					B65A67D02A871BC800F2704E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = B65A67B32A85C3D800F2704E;
 					};
 				};
 			};
@@ -139,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				B65A67B32A85C3D800F2704E /* TCATraining */,
+				B65A67D02A871BC800F2704E /* TCATrainingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +206,13 @@
 			files = (
 				B65A67C02A85C3DD00F2704E /* Preview Assets.xcassets in Resources */,
 				B65A67BC2A85C3DD00F2704E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65A67CF2A871BC800F2704E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +229,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B65A67CD2A871BC800F2704E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65A67D42A871BC800F2704E /* TCATrainingTests.swift in Sources */,
+				B65A67DF2A871FDC00F2704E /* CounterFeatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B65A67D62A871BC800F2704E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B65A67B32A85C3D800F2704E /* TCATraining */;
+			targetProxy = B65A67D52A871BC800F2704E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B65A67C12A85C3DD00F2704E /* Debug */ = {
@@ -358,6 +438,47 @@
 			};
 			name = Release;
 		};
+		B65A67D82A871BC800F2704E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44UHJ8FK3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tca.TCATrainingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCATraining.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCATraining";
+			};
+			name = Debug;
+		};
+		B65A67D92A871BC800F2704E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44UHJ8FK3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tca.TCATrainingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCATraining.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCATraining";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +496,15 @@
 			buildConfigurations = (
 				B65A67C42A85C3DD00F2704E /* Debug */,
 				B65A67C52A85C3DD00F2704E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B65A67D72A871BC800F2704E /* Build configuration list for PBXNativeTarget "TCATrainingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65A67D82A871BC800F2704E /* Debug */,
+				B65A67D92A871BC800F2704E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
