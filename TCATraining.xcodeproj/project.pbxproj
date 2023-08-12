@@ -83,7 +83,7 @@
 		B65A67B62A85C3D800F2704E /* TCATraining */ = {
 			isa = PBXGroup;
 			children = (
-				B65A67C92A85C52500F2704E /* Tutorials */,
+				B65A67C92A85C52500F2704E /* Counter */,
 				B65A67B72A85C3D800F2704E /* TCATrainingApp.swift */,
 				B65A67B92A85C3D800F2704E /* ContentView.swift */,
 				B65A67BB2A85C3DD00F2704E /* Assets.xcassets */,
@@ -102,13 +102,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B65A67C92A85C52500F2704E /* Tutorials */ = {
+		B65A67C92A85C52500F2704E /* Counter */ = {
 			isa = PBXGroup;
 			children = (
 				B65A67CA2A85C55800F2704E /* CounterFeature.swift */,
 				B65A67E02A8736F900F2704E /* NumberFactClient.swift */,
 			);
-			path = Tutorials;
+			path = Counter;
 			sourceTree = "<group>";
 		};
 		B65A67D22A871BC800F2704E /* TCATrainingTests */ = {
