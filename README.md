@@ -2,14 +2,16 @@
 
 https://pointfreeco.github.io/swift-composable-architecture/main/tutorials/meetcomposablearchitecture
 
-### Your first feature
-30 min
+### Your first feature (20min)
+30min
 
-### Adding side effects
-90 min
+### Adding side effects (30min)
+90min
 
-### Testing you feature
-120 min
+### Testing you feature (60min)
+120min
 
-### Your first presentation
-60 min
+### Your first presentation (30min)
+60min
+
+*() Estimated Time
