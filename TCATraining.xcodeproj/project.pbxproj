@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C268AA12ACFEEEA008DC020 /* ContactsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C268AA02ACFEEEA008DC020 /* ContactsFeatureTests.swift */; };
 		B65A67B82A85C3D800F2704E /* TCATrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67B72A85C3D800F2704E /* TCATrainingApp.swift */; };
 		B65A67BA2A85C3D800F2704E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A67B92A85C3D800F2704E /* ContentView.swift */; };
 		B65A67BC2A85C3DD00F2704E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65A67BB2A85C3DD00F2704E /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C268AA02ACFEEEA008DC020 /* ContactsFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeatureTests.swift; sourceTree = "<group>"; };
 		B65A67B42A85C3D800F2704E /* TCATraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCATraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65A67B72A85C3D800F2704E /* TCATrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCATrainingApp.swift; sourceTree = "<group>"; };
 		B65A67B92A85C3D800F2704E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				B65A67D32A871BC800F2704E /* TCATrainingTests.swift */,
 				B65A67DA2A871C1800F2704E /* CounterFeatureTests.swift */,
+				0C268AA02ACFEEEA008DC020 /* ContactsFeatureTests.swift */,
 			);
 			path = TCATrainingTests;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65A67D42A871BC800F2704E /* TCATrainingTests.swift in Sources */,
+				0C268AA12ACFEEEA008DC020 /* ContactsFeatureTests.swift in Sources */,
 				B65A67DF2A871FDC00F2704E /* CounterFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
