@@ -17,12 +17,18 @@ struct Contact: Equatable, Identifiable {
 struct ContactsFeature: Reducer {
     struct State: Equatable {
         @PresentationState var addContact: AddContactFeature.State?
+        @PresentationState var alert: AlertState<Action.Alert>?
         var contacts: IdentifiedArrayOf<Contact> = []
     }
 
     enum Action: Equatable {
         case addButtonTapped
         case addContact(PresentationAction<AddContactFeature.Action>)
+        case alert(PresentationAction<Alert>)
+        case deleteButtonTapped(id: Contact.ID)
+        enum Alert: Equatable {
+            case confirmDeletion(id: Contact.ID)
+        }
     }
 
     var body: some ReducerOf<Self> {
@@ -38,11 +44,26 @@ struct ContactsFeature: Reducer {
                 return .none
             case .addContact:
                 return .none
+            case let .alert(.presented(.confirmDeletion(id: id))):
+                state.contacts.remove(id: id)
+                return .none
+            case .alert:
+                return .none
+            case let .deleteButtonTapped(id: id):
+                state.alert = AlertState {
+                    TextState("Are you sure?")
+                } actions: {
+                    ButtonState(role: .destructive, action: .confirmDeletion(id: id)) {
+                        TextState("Delete")
+                    }
+                }
+                return .none
             }
         }
         .ifLet(\.$addContact, action: /Action.addContact) {
             AddContactFeature()
         }
+        .ifLet(\.$alert, action: /Action.alert)
     }
 }
 
@@ -54,6 +75,16 @@ struct ContactView: View {
             WithViewStore(self.store, observe: \.contacts) { viewStore in
                 List {
                     ForEach(viewStore.state) { contact in
+                        HStack {
+                            Text(contact.name)
+                            Spacer()
+                            Button {
+                                viewStore.send(.deleteButtonTapped(id: contact.id))
+                            } label: {
+                                Image(systemName: "trash")
+                                    .foregroundColor(.red)
+                            }
+                        }
                         Text(contact.name)
                     }
                 }
@@ -77,6 +108,7 @@ struct ContactView: View {
                 AddContactView(store: addContactStore)
             }
         }
+        .alert(store: self.store.scope(state: \.$alert, action: { .alert($0)}))
     }
 }
 
